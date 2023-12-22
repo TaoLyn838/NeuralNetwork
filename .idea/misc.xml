@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="C:\Users\cheng\miniconda3\envs\tf" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="C:\Users\cheng\miniconda3\envs\tf" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="neuralnetworkenv" project-jdk-type="Python SDK" />
 </project>
