@@ -15,13 +15,35 @@ The bias can be thought of as how much flexible the perceptron is. It is somehow
     with the data better. Without b the line will always goes through the origin (0, 0) and you may get 
     a poorer fit. (Jorge Leonel)
 """
+
+
 class MultiLayerPerceptron:
-    def __init__(self,  input_size, hidden_size, output_size, learning_rate=0.0001):
+    def relu_actived(self, x):
+        return np.maximum(0, x)
+    def forward_propagation(self, X):
+        self.h1 = np.dot(X, self.w_input) + self.b1
+        self.h1_output = self.relu_actived(self.h1)
+
+
+
+
+
+
+    def __init__(self, input_size, hidden_size, output_size, learning_rate=0.0001):
         self.input_size = input_size
         self.hidden_size = hidden_size
         self.output_size = output_size
 
         # Initialize weights for input -> hidden layer and hidden -> output layer
-        self.w1 = np.random.randn
+        self.w_input = np.random.randn(self.input_size, self.hidden_size) * np.sqrt(2 / self.hidden_size)
+        self.w1_hidden = np.random.randn(self.hidden_size, self.hidden_size) * np.sqrt(2 / self.hidden_size)
+        self.w2_hidden = np.random.randn(self.hidden_size, self.hidden_size) * np.sqrt(2 / self.hidden_size)
+        self.w3_hidden = np.random.randn(self.hidden_size, self.hidden_size) * np.sqrt(2 / self.hidden_size)
+        self.w_output = np.random.randn(self.hidden_size, self.output_size) * np.sqrt(2 / self.output_size)
 
-
+        # Initialize biases for hidden and output layers
+        self.b1 = np.zeros((1, self.hidden_size))
+        self.b2 = np.zeros((1, self.hidden_size))
+        self.b3 = np.zeros((1, self.hidden_size))
+        self.b4 = np.zeros((1, self.hidden_size))
+        self.b5 = np.zeros((1, self.output_size))
