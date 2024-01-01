@@ -16,5 +16,4 @@ The Simple Perceptron Neural Network is a Python-based implementation of the fun
 The perceptron receives input data and applies a set of weights to these inputs. The weighted inputs are then summed up and passed through an activation function, which is threshold-based in this implementation. Based on the output of the activation function, the perceptron adjusts its weights to reduce the prediction error. This process is repeated for a specified number of epochs or until the error reaches an acceptable level.
 
 ## Walkthrough
-See simple output in jupyter file [main.ipynb](https://github.com/TaoLyn838/NeuralNetwork/blob/main/Perceptron/main.ipynb)
-![output](https://github.com/TaoLyn838/NeuralNetwork/assets/58400041/c4d36b3f-ecee-4331-bc55-764494374d26)
+See simple output in jupyter file [simplePerceptron.ipynb](https://github.com/TaoLyn838/NeuralNetwork/blob/main/Perceptron/simplePerceptron.ipynb)
