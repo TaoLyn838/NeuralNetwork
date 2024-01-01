@@ -17,4 +17,3 @@ The perceptron receives input data and applies a set of weights to these inputs.
 
 ## Walkthrough
 See simple output in jupyter file [simplePerceptron.ipynb](https://github.com/TaoLyn838/NeuralNetwork/blob/main/Perceptron/simplePerceptron.ipynb)
-![output](https://github.com/TaoLyn838/NeuralNetwork/assets/58400041/c4d36b3f-ecee-4331-bc55-764494374d26)
